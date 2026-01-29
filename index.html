@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- distyle -->
+    <link rel="stylesheet" href="assets/css/distyle.css" />
+    <!-- common -->
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <!-- main -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-menu">
+        <button
+          class="header-menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="globalMenu"
+        >
+          <span class="header-menu-icon" aria-hidden="true"></span>
+          <span class="header-menu-text">MENU</span>
+        </button>
+      </div>
+
+      <div class="menu-overlay" data-menu-overlay hidden></div>
+
+      <nav id="globalMenu" class="menu-panel" aria-hidden="true">
+        <div class="menu-panel-head">
+          <button
+            class="menu-close"
+            type="button"
+            data-menu-close
+            aria-label="Close menu"
+          >
+            ×
+          </button>
+        </div>
+
+        <ul class="menu-list">
+          <li><a href="#kv">Top</a></li>
+          <li><a href="#companies">Companies</a></li>
+          <li><a href="#wwd">What We Do</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="kv-back" id="block-kv">
+        <div class="kv-inner">
+          <!-- left -->
+          <div class="kv-img">
+            <!-- Swiper -->
+            <div class="swiper js-swiperKv">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/main/kv.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/main/kv.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/main/kv.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- キャッチ（Swiperの外に出す） -->
+            <div class="kv-heading">
+              <h2>笑顔が多い会社には、理由があった！</h2>
+              <button class="kv-heading-btn accent" type="button">
+                View All
+              </button>
+            </div>
+          </div>
+
+          <!-- right PC -->
+          <div class="kv-right">
+            <h1 class="kv-site-name">サイトネーム？</h1>
+
+            <div class="kv-comp-box">
+              <h3>四国建設コンサルタント株式会社</h3>
+            </div>
+
+            <div class="kv-slider-ui">
+              <div class="kv-arrows">
+                <button
+                  class="kv-arrow kv-arrow-prev"
+                  type="button"
+                  aria-label="前へ"
+                >
+                  ◀
+                </button>
+                <button
+                  class="kv-arrow kv-arrow-next"
+                  type="button"
+                  aria-label="次へ"
+                >
+                  ▶
+                </button>
+              </div>
+
+              <div class="kv-dots" aria-label="スライド位置"></div>
+            </div>
+          </div>
+
+          <!-- SP caption -->
+          <div class="kv-sp-caption">
+            <p class="kv-sp-catch">笑顔が多い会社には、理由があった！</p>
+
+            <div class="kv-sp-meta">
+              <p class="kv-sp-company">四国建設コンサルタント株式会社</p>
+              <a class="kv-sp-viewall" href="#">View All</a>
+            </div>
+
+            <div class="kv-sp-controls">
+              <button
+                class="kv-sp-arrow kv-sp-arrow-prev"
+                type="button"
+              ></button>
+              <button
+                class="kv-sp-arrow kv-sp-arrow-next"
+                type="button"
+              ></button>
+            </div>
+
+            <div class="kv-sp-dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- companies -->
+      <section class="container companies">
+        <h2 class="accent js-momentum">ALL COMPANIES</h2>
+        <div class="comp-grid">
+          <article>
+            <figure class="comp-thmb">
+              <img src="./images/main/kv.jpg" alt="" />
+            </figure>
+            <figcaption class="comp-grid-item">
+              <h3>何でも相談できる距離の近さ</h3>
+              <p>四国建設コンサルタント株式会社</p>
+              <div class="comp-tag">
+                <span>コンサルタント</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+              </div>
+              <time datetime="2026-01-23">2026/01/23</time>
+            </figcaption>
+          </article>
+
+          <article>
+            <figure class="comp-thmb">
+              <img src="./images/main/dammy.jpg" alt="" />
+            </figure>
+            <figcaption class="comp-grid-item">
+              <h3>何でも相談できる距離の近さ</h3>
+              <p>四国建設コンサルタント株式会社</p>
+              <div class="comp-tag">
+                <span>コンサルタント</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+              </div>
+              <time datetime="2026-01-23">2026/01/23</time>
+            </figcaption>
+          </article>
+
+          <article>
+            <figure class="comp-thmb">
+              <img src="./images/main/dammy2.jpg" alt="" />
+            </figure>
+            <figcaption class="comp-grid-item">
+              <h3>何でも相談できる距離の近さ</h3>
+              <p>四国建設コンサルタント株式会社</p>
+              <div class="comp-tag">
+                <span>コンサルタント</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+              </div>
+              <time datetime="2026-01-23">2026/01/23</time>
+            </figcaption>
+          </article>
+
+          <article>
+            <figure class="comp-thmb">
+              <img src="./images/main/kv.jpg" alt="" />
+            </figure>
+            <figcaption class="comp-grid-item">
+              <h3>何でも相談できる距離の近さ</h3>
+              <p>四国建設コンサルタント株式会社</p>
+              <div class="comp-tag">
+                <span>コンサルタント</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+              </div>
+              <time datetime="2026-01-23">2026/01/23</time>
+            </figcaption>
+          </article>
+
+          <article>
+            <figure class="comp-thmb">
+              <img src="./images/main/dammy.jpg" alt="" />
+            </figure>
+            <figcaption class="comp-grid-item">
+              <h3>何でも相談できる距離の近さ</h3>
+              <p>四国建設コンサルタント株式会社</p>
+              <div class="comp-tag">
+                <span>コンサルタント</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+              </div>
+              <time datetime="2026-01-23">2026/01/23</time>
+            </figcaption>
+          </article>
+
+          <article>
+            <figure class="comp-thmb">
+              <img src="./images/main/dammy2.jpg" alt="" />
+            </figure>
+            <figcaption class="comp-grid-item">
+              <h3>何でも相談できる距離の近さ</h3>
+              <p>四国建設コンサルタント株式会社</p>
+              <div class="comp-tag">
+                <span>コンサルタント</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+              </div>
+              <time datetime="2026-01-23">2026/01/23</time>
+            </figcaption>
+          </article>
+
+          <article>
+            <figure class="comp-thmb">
+              <img src="./images/main/kv.jpg" alt="" />
+            </figure>
+            <figcaption class="comp-grid-item">
+              <h3>何でも相談できる距離の近さ</h3>
+              <p>四国建設コンサルタント株式会社</p>
+              <div class="comp-tag">
+                <span>コンサルタント</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+              </div>
+              <time datetime="2026-01-23">2026/01/23</time>
+            </figcaption>
+          </article>
+
+          <article>
+            <figure class="comp-thmb">
+              <img src="./images/main/dammy.jpg" alt="" />
+            </figure>
+            <figcaption class="comp-grid-item">
+              <h3>何でも相談できる距離の近さ</h3>
+              <p>四国建設コンサルタント株式会社</p>
+              <div class="comp-tag">
+                <span>コンサルタント</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+              </div>
+              <time datetime="2026-01-23">2026/01/23</time>
+            </figcaption>
+          </article>
+
+          <article>
+            <figure class="comp-thmb">
+              <img src="./images/main/dammy2.jpg" alt="" />
+            </figure>
+            <figcaption class="comp-grid-item">
+              <h3>何でも相談できる距離の近さ</h3>
+              <p>四国建設コンサルタント株式会社</p>
+              <div class="comp-tag">
+                <span>コンサルタント</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+                <span>設計・デザイン</span>
+              </div>
+              <time datetime="2026-01-23">2026/01/23</time>
+            </figcaption>
+          </article>
+        </div>
+
+        <div class="cta">
+          <button class="comp-btn" type="button">企業一覧へ</button>
+        </div>
+      </section>
+
+      <div class="wwd-visual-wrap">
+        <div class="wwd-visual">
+          <div class="wwd-visual-text accent">
+            <span class="wwd-word is-active">WHAT WE DO</span>
+            <span class="wwd-word"
+              >建設業界には、現場でつくる仕事だけでなく、</span
+            >
+            <span class="wwd-word"
+              >人をまとめる仕事、考える仕事など、<br />さまざまな役割があります。</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- what we do -->
+      <section class="wwd-scroll">
+        <!-- intro（通常スクロール） -->
+        <!-- <div class="container">
+          <div class="wwd-intro">
+            <div class="wwd-intro-text">
+              <h2>
+                仕事から、<br />
+                県内の会社を知る
+              </h2>
+              <p>
+                建設業界には、現場でつくる仕事だけでなく、
+                人をまとめる仕事、考える仕事など、さまざまな役割があります。
+                まずは、どんな仕事があるのかを知るところから。
+              </p>
+            </div>
+            <img src="" alt="" class="wwd-intro-img" />
+          </div> -->
+        <!-- </div> -->
+        <!-- ★ここから横スクロール固定エリア -->
+        <div class="wwd-pin">
+          <div class="wwd-pin-ui">
+            <h2 class="wwd-title accent js-momentum">What We Offer</h2>
+          </div>
+          <div class="wwd-horizontal">
+            <div class="wwd-track">
+              <article class="wwd-card">
+                <figure class="wwd-card-thumb">
+                  <img src="./images/main/design_back.jpg" alt="" />
+                </figure>
+                <div class="wwd-card-body">
+                  <h3>建物や空間を考える</h3>
+                  <div class="wwd-card-tags">
+                    <span>設計士・デザイナー</span>
+                  </div>
+                  <p>
+                    設計・デザインの仕事は、考えを図面やデータとして形にする役割です。
+                  </p>
+                </div>
+              </article>
+
+              <article class="wwd-card">
+                <figure class="wwd-card-thumb">
+                  <img src="./images/main/design_back.jpg" alt="" />
+                </figure>
+                <div class="wwd-card-body">
+                  <h3>建物や空間を考える</h3>
+                  <div class="wwd-card-tags">
+                    <span>設計士・デザイナー</span>
+                  </div>
+                  <p>
+                    設計・デザインの仕事は、考えを図面やデータとして形にする役割です。
+                  </p>
+                </div>
+              </article>
+
+              <article class="wwd-card">
+                <figure class="wwd-card-thumb">
+                  <img src="./images/main/design_back.jpg" alt="" />
+                </figure>
+                <div class="wwd-card-body">
+                  <h3>建物や空間を考える</h3>
+                  <div class="wwd-card-tags">
+                    <span>設計士・デザイナー</span>
+                  </div>
+                  <p>
+                    設計・デザインの仕事は、考えを図面やデータとして形にする役割です。
+                  </p>
+                </div>
+              </article>
+
+              <article class="wwd-card">
+                <figure class="wwd-card-thumb">
+                  <img src="./images/main/design_back.jpg" alt="" />
+                </figure>
+                <div class="wwd-card-body">
+                  <h3>建物や空間を考える</h3>
+                  <div class="wwd-card-tags">
+                    <span>設計士・デザイナー</span>
+                  </div>
+                  <p>
+                    設計・デザインの仕事は、考えを図面やデータとして形にする役割です。
+                  </p>
+                </div>
+              </article>
+
+              <article class="wwd-card">
+                <figure class="wwd-card-thumb">
+                  <img src="./images/main/design_back.jpg" alt="" />
+                </figure>
+                <div class="wwd-card-body">
+                  <h3>建物や空間を考える</h3>
+                  <div class="wwd-card-tags">
+                    <span>設計士・デザイナー</span>
+                  </div>
+                  <p>
+                    設計・デザインの仕事は、考えを図面やデータとして形にする役割です。
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- news -->
+      <section class="news container" aria-labelledby="news-title">
+        <h2 class="news-title accent js-momentum" id="news-title">NEWS</h2>
+
+        <ul class="news-list">
+          <li class="news-item">
+            <time class="news-date" datetime="2025-12-15">2025/12/15</time>
+            <p class="news-text">ここにお知らせが入ります</p>
+          </li>
+          <li class="news-item">
+            <time class="news-date" datetime="2025-12-15">2025/12/15</time>
+            <p class="news-text">ここにお知らせが入ります</p>
+          </li>
+          <li class="news-item">
+            <time class="news-date" datetime="2025-12-15">2025/12/15</time>
+            <p class="news-text">ここにお知らせが入ります</p>
+          </li>
+          <li class="news-item">
+            <time class="news-date" datetime="2025-12-15">2025/12/15</time>
+            <p class="news-text">ここにお知らせが入ります</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="footer-inner">
+        <div class="footer-title">ここにサイトタイトル</div>
+        <div class="footer-grid">
+          <nav>
+            <ul class="footer-flex">
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">採用情報</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+          </nav>
+          <div class="footer-text">
+            <p>
+              「建設の仕事と、その先にある会社を知る」をテーマに、県内の建設企業を紹介する情報サイトです。
+              働く人の想いや会社の特徴を軸に、進路や就職を考えるヒントを届けます。
+            </p>
+          </div>
+        </div>
+
+        <div class="logo-item">
+          <img src="" alt="" />
+          <div class="address">
+            <p><span>徳島県</span>新時代に踊り出そう</p>
+            <p>徳島県徳島市万代町1丁目1番地 徳島県県土整備部</p>
+            <p>TEL：088-621-2680/FAX：088-621-2864</p>
+          </div>
+        </div>
+
+        <p class="copyright"><small>&copy; 2025 WEBDESIGN</small></p>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
