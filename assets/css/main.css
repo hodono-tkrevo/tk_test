@@ -405,6 +405,7 @@ time {
   padding: 10px 20px;
   font-size: 30px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .comp-btn::after {
@@ -414,11 +415,23 @@ time {
   align-items: center;
   width: 24px;
   height: 24px;
-  background-color: var(--color-text);
+  background: var(--color-text);
   color: var(--color-bg);
   border-radius: 50%;
   font-size: 12px;
-  line-height: 1;
+  transition: 0.3s;
+}
+
+/* hoverでボタン背景 */
+.comp-btn:hover {
+  background: #284cdb;
+  color: var(--color-bg);
+}
+
+/* hoverで丸アイコンも変える */
+.comp-btn:hover::after {
+  background: var(--color-bg);
+  color: #284cdb;
 }
 
 /* ---------- wwd visula ---------- */
