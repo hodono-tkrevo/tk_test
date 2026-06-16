@@ -1,96 +1,110 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BASE Opening Animation Preview</title>
-    <meta name="description" content="BASE opening animation preview patterns" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>06アニメーション 日本語フォント確認</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="opfont-a">
+  <div class="preview-toolbar preview-toolbar--opening" aria-label="opening font pattern selector">
+    <div class="preview-toolbar__group">
+      <span>Opening Font</span>
+      <a href="?opfont=a&oppreview=1" data-opfont="a">A</a>
+      <a href="?opfont=b&oppreview=1" data-opfont="b">B</a>
+      <a href="?opfont=c&oppreview=1" data-opfont="c">C</a>
+      <a href="?opfont=d&oppreview=1" data-opfont="d">D</a>
+    </div>
+    <button type="button" class="js-replay">Replay 06</button>
+  </div>
 
-  <body>
-    <main class="stage" aria-label="BASE オープニングアニメーションプレビュー">
-      <section class="pattern calm-wipe active" data-pattern="calm-wipe" data-final-delay="4100">
-        <div class="opening opening-calm">
-          <!-- <p class="eyebrow">BASE GROUP</p> -->
-          <h1 class="message opening-keywords">
-            <span>家づくり　不動産</span>
-            <span>インテリア　キャリア</span>
-          </h1>
-          <p class="subcopy">全部、BASE GROUPで</p>
-        </div>
-        <div class="line-mask" aria-hidden="true"><span></span><span></span></div>
-        <div class="final-wrap">
-          <img src="./img/final-city.jpg" alt="" class="final-image" />
-          <p class="final-text"><span>世界一、人が輝いている</span><span>住まいと暮らしの</span><span>総合コンサルティングカンパニー</span></p>
-        </div>
-      </section>
+  <!-- OPAnime -->
+  <div
+    class="opening pattern persol-switch persol-settle active"
+    data-final-delay="1100"
+    data-swap-delay="3200"
+    data-settle-delay="4400">
+    <div class="opening-persol-switch">
+      <div
+        class="switch-copy-a-wrap"
+        aria-label="家づくり 不動産 インテリア キャリア 全部、BASE GROUPで">
+        <h1 class="switch-copy-a">
+          <span>家づくり</span>
+          <span>不動産</span>
+          <span>インテリア</span>
+          <span>キャリア</span>
+        </h1>
+        <p class="switch-sub-a">全部、BASE GROUPで</p>
+      </div>
 
-      <section class="pattern foundation" data-pattern="foundation" data-final-delay="4550">
-        <div class="opening opening-foundation">
-          <!-- <p class="eyebrow">BASE GROUP</p> -->
-          <h1 class="foundation-copy"><span>全部、</span><span>BASE GROUPで</span></h1>
-          <div class="business-list" aria-hidden="true">
-            <span>家づくり</span>
-            <span>不動産</span>
-            <span>インテリア</span>
-            <span>キャリア</span>
-          </div>
-        </div>
-        <div class="line-mask foundation-line-mask" aria-hidden="true"><span></span><span></span></div>
-        <div class="final-wrap final-dark">
-          <img src="./img/final-city.jpg" alt="" class="final-image" />
-          <p class="final-text"><span>世界一、人が輝いている</span><span>住まいと暮らしの</span><span>総合コンサルティングカンパニー</span></p>
-        </div>
-      </section>
+      <div
+        class="switch-copy-b-wrap"
+        aria-label="建物×不動産×インテリア 人の力で人生の節目を プロデュースする会社">
+        <p class="switch-copy-b">
+          <span>建物×不動産×インテリア</span>
+          <span>人の力で人生の節目を</span>
+          <span>プロデュースする会社</span>
+        </p>
+      </div>
+    </div>
 
-      <section class="pattern quiet-grid" data-pattern="quiet-grid" data-final-delay="4300">
-        <div class="quiet-panels" aria-hidden="true"><span></span><span></span><span></span></div>
-        <div class="opening opening-grid">
-          <!-- <p class="eyebrow">BASE GROUP</p> -->
-          <h1 class="message compact opening-keywords">
-            <span>家づくり　不動産</span>
-            <span>インテリア　キャリア</span>
-          </h1>
-          <p class="subcopy">全部、BASE GROUPで</p>
-        </div>
-        <div class="final-wrap">
-          <img src="./img/final-city.jpg" alt="" class="final-image" />
-          <p class="final-text"><span>世界一、人が輝いている</span><span>住まいと暮らしの</span><span>総合コンサルティングカンパニー</span></p>
-        </div>
-      </section>
+    <div class="persol-switch-mask" aria-hidden="true"></div>
+    <div class="settle-line" aria-hidden="true"></div>
 
-      
+    <div class="final-wrap final-blue">
+      <img src="./img/final-city.jpg" alt="" class="final-image">
+    </div>
+  </div>
+  <!-- OPAnime ed -->
 
-      <section class="pattern editorial-stack" data-pattern="editorial-stack" data-final-delay="4250">
-        <div class="opening opening-editorial">
-          <!-- <p class="eyebrow">BASE GROUP</p> -->
-          <div class="editorial-shell">
-            <div class="editorial-rail" aria-hidden="true"><span></span><span></span></div>
-            <h1 class="editorial-copy">
-              <span>家づくり</span>
-              <span>不動産</span>
-              <span>インテリア</span>
-              <span>キャリア</span>
-            </h1>
-          </div>
-          <p class="editorial-sub">全部、BASE GROUPで</p>
-        </div>
-        <div class="final-wrap final-blue">
-          <img src="./img/final-city.jpg" alt="" class="final-image" />
-          <p class="final-text"><span>世界一、人が輝いている</span><span>住まいと暮らしの</span><span>総合コンサルティングカンパニー</span></p>
-        </div>
-      </section>
+  <main id="primary" class="site-main">
+    <section id="mainvisual" class="mainvisual mainvisual--opening-final">
+      <div class="mainvisual__copy">
+        <h2 class="mainvisual__copy-wrapper">
+          <span class="mainvisual__copy-text">建物×不動産×インテリア</span>
+          <span class="mainvisual__copy-text">人の力で人生の節目を</span>
+          <span class="mainvisual__copy-text">プロデュースする会社</span>
+        </h2>
+      </div>
 
-    </main>
+      <div class="main-image">
+        <figure class="top-image">
+          <img src="./img/final-city.jpg" alt="">
+        </figure>
+      </div>
+    </section>
 
-    <nav class="controls" aria-label="アニメーションパターン切り替え">
-      <button class="active" data-target="calm-wipe">01 WIPE</button>
-      <button data-target="foundation">02 FOUNDATION</button>
-      <button data-target="quiet-grid">03 GRID</button>
-      <button data-target="editorial-stack">04 EDITORIAL</button>
-    </nav>
+    <section class="preview-section">
+      <div class="preview-section__head">
+        <p class="preview-kicker">OPENING 06 FONT PATTERNS</p>
+        <h2>06アニメーション用フォント比較</h2>
+        <p>下のボタン、またはURLパラメータでA〜Dを切り替えできます。</p>
+      </div>
+      <div class="opening-font-cards">
+        <article class="font-card op-card-a">
+          <p class="font-card__label">A / 現行寄り</p>
+          <p class="font-card__main">家づくり　不動産　インテリア　キャリア</p>
+          <p class="font-card__sub">建物×不動産×インテリア<br>人の力で人生の節目を<br>プロデュースする会社</p>
+        </article>
+        <article class="font-card op-card-b">
+          <p class="font-card__label">B / 明朝強め</p>
+          <p class="font-card__main">家づくり　不動産　インテリア　キャリア</p>
+          <p class="font-card__sub">建物×不動産×インテリア<br>人の力で人生の節目を<br>プロデュースする会社</p>
+        </article>
+        <article class="font-card op-card-c">
+          <p class="font-card__label">C / ゴシック</p>
+          <p class="font-card__main">家づくり　不動産　インテリア　キャリア</p>
+          <p class="font-card__sub">建物×不動産×インテリア<br>人の力で人生の節目を<br>プロデュースする会社</p>
+        </article>
+        <article class="font-card op-card-d">
+          <p class="font-card__label">D / 余白強め明朝</p>
+          <p class="font-card__main">家づくり　不動産　インテリア　キャリア</p>
+          <p class="font-card__sub">建物×不動産×インテリア<br>人の力で人生の節目を<br>プロデュースする会社</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="./js/main.js"></script>
+</body>
 </html>
